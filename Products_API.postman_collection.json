@@ -8,9 +8,16 @@
 	"item": [
 		{
 			"name": "Get_All_Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://127.0.0.1:8000/api/products/",
 					"protocol": "http",
@@ -37,7 +44,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Lego Star Wars The Razor Crest\",\r\n    \"description\": \"Lego 75331 Expert building kit for adults (6,186 Pieces)\",\r\n    \"price\": 599.99,\r\n    \"inventory_quantity\": 22\r\n}",
+					"raw": "{\r\n    \"title\": \"Lego Atari 2600\",\r\n    \"description\": \"Lego 10306 Expert building kit for adults (2,532 Pieces)\",\r\n    \"price\": 239.99,\r\n    \"inventory_quantity\": 20,\r\n    \"image_link\": \"https://www.bing.com/images/search?view=detailV2&ccid=moxkdwbe&id=F2536934AAEBC4C40E5A96AB1B441F0A7596F03D&thid=OIP.moxkdwbeVaMwau2m59L1cwHaEK&mediaurl=https%3a%2f%2fi.pini\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -65,11 +72,18 @@
 		},
 		{
 			"name": "Get_Product_By_Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/products/1/",
+					"raw": "http://127.0.0.1:8000/api/products/6/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -81,7 +95,7 @@
 					"path": [
 						"api",
 						"products",
-						"1",
+						"6",
 						""
 					]
 				}
@@ -95,7 +109,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Lego Star Wars Imperial Star Destroyer\",\r\n    \"description\": \"Lego 75252 Expert building kit for adults (4,784 Pieces)\",\r\n    \"price\": 1100.95,\r\n    \"inventory_quantity\": 2\r\n}",
+					"raw": "{\r\n    \"title\": \"Lego Atari 2600\",\r\n    \"description\": \"Lego 10306 Expert building kit for adults (2,532 Pieces)\",\r\n    \"price\": 229.99,\r\n    \"inventory_quantity\": 20,\r\n    \"image_link\": \"https://www.bing.com/images/search?view=detailV2&ccid=moxkdwbe&id=F2536934AAEBC4C40E5A96AB1B441F0A7596F03D&thid=OIP.moxkdwbeVaMwau2m59L1cwHaEK&mediaurl=https%3a%2f%2fi.pini\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -103,7 +117,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/products/8/",
+					"raw": "http://127.0.0.1:8000/api/products/6/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -115,7 +129,7 @@
 					"path": [
 						"api",
 						"products",
-						"8",
+						"6",
 						""
 					]
 				}
@@ -128,7 +142,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/products/9/",
+					"raw": "http://127.0.0.1:8000/api/products/7/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -140,7 +154,7 @@
 					"path": [
 						"api",
 						"products",
-						"9",
+						"7",
 						""
 					]
 				}
